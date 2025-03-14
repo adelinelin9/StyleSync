@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sync</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script type="text/javascript" src="main.js" defer></script>
+    
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <div class = "signIn" >
+            <a href="signin.html">Sign In</a>
+        </div> 
+
+
+        <a href="index.html" class = "logo">
+            <img src="img/StyleSync.png" alt="Style Sync Logo" width = "257" height = "180">
+        </a>
+
+
+        <nav>
+            
+            <a href="index.html" id="look-book">LookBook</a>
+            <a href="outfit-builder.html" id="outfit-builder">Outfit Builder</a>
+            <a href="search.html" id="search-product">Search by Product</a>
+            
+        </nav>
+    </header>
+    <main class = "outfit-builder">
+        <div class = "outfit-builder-desc">
+            <h1>Outfit Builder</h1>
+            <p>Upload and mix & match outfits.</p>
+        </div>
+        <div class = "build-box" >
+            <div class = "picture-box">  
+            </div>
+            <div class = "item-box"> 
+                <p class = "item">item </p>
+                <p class = "item">item</p>
+                <p class = "item">item</p>
+            </div>
+        </div>
+        <div class="content-box">
+            <div class = "inventory-or-upload">
+                <p id="search-inventory">Search inventory</p>
+                <p> or </p>
+                <p id="upload-an-item">Upload picture of item</p>
+            </div>
+            <div class = "search-build">
+                <div class="search-and-filter">
+                <p class="search-box">search</p>
+                <form>
+                    <input type="checkbox" id="filter1">
+                    <label for="filter1"> filter1</label><br>
+                    <input type="checkbox" id="filter2" name="filter2" value="Car">
+                    <label for="filter2"> filter2</label><br>
+                    <input type="checkbox" id="filter3" name="filter3" value="Boat">
+                    <label for="filter3"> filter3</label><br><br>
+                </form>
+                </div>
+                <div class = "search-inventory">
+                    <p class = "item">item </p>
+                    <p class = "item">item</p>
+                    <p class = "item">item</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Style Sync</p>
+    </footer>
+</body>
+</html>
+

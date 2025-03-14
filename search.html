@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sync</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script type="text/javascript" src="main.js" defer></script>
+
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="signIn">
+            <a href="signin.html">Sign In</a>
+        </div> 
+
+        <a href="index.html" class="logo">
+            <img src="img/StyleSync.png" alt="Style Sync Logo" width="257" height="180">
+        </a>
+
+        <nav>
+            <a href="index.html" id="look-book">LookBook</a>
+            <a href="outfit-builder.html" id="outfit-builder">Outfit Builder</a>
+            <a href="search.html" id="search-product">Search by Product</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <h1>Search by Product</h1>
+
+            <!-- Search Bar & Filters Button in One Row -->
+            <div class="search-bar-container">
+                <button class="filter-toggle" onclick="toggleFilters()">Filters ▼</button>
+                <div class="search-bar"> 
+                    <input type="text" id="search-input" placeholder="Search for clothing, brands, or styles...">
+                    <button onclick="performSearch()">Search</button>
+                </div>
+            </div>
+
+            <!-- Filters Section (Hidden by Default) -->
+            <div class="filters" id="filter-section">
+                <fieldset>
+                    <legend>Category:</legend>
+                    <label><input type="checkbox" name="category" value="tops"> Tops</label>
+                    <label><input type="checkbox" name="category" value="bottoms"> Bottoms</label>
+                    <label><input type="checkbox" name="category" value="shoes"> Shoes</label>
+                    <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+                </fieldset>
+            
+                <!-- Color Filter -->
+                <fieldset>
+                    <legend>Color:</legend>
+                    <label><input type="checkbox" name="color" value="red"> Red</label>
+                    <label><input type="checkbox" name="color" value="orange"> Orange</label>
+                    <label><input type="checkbox" name="color" value="yellow"> Yellow</label>
+                    <label><input type="checkbox" name="color" value="green"> Green</label>
+                    <label><input type="checkbox" name="color" value="blue"> Blue</label>
+                    <label><input type="checkbox" name="color" value="purple"> Purple</label>
+                    <label><input type="checkbox" name="color" value="pink"> Pink</label>
+                    <label><input type="checkbox" name="color" value="brown"> Brown</label>
+                    <label><input type="checkbox" name="color" value="black"> Black</label>
+                    <label><input type="checkbox" name="color" value="white"> White</label>
+                </fieldset>
+            
+                <!-- Gender Filter -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="checkbox" name="gender" value="mens"> Men's</label>
+                    <label><input type="checkbox" name="gender" value="womens"> Women's</label>
+                    <label><input type="checkbox" name="gender" value="unisex"> Unisex</label>
+                </fieldset>
+            
+                <!-- Size Filter -->
+                <fieldset>
+                    <legend>Size:</legend>
+                    <label><input type="checkbox" name="size" value="xs"> XS</label>
+                    <label><input type="checkbox" name="size" value="s"> S</label>
+                    <label><input type="checkbox" name="size" value="m"> M</label>
+                    <label><input type="checkbox" name="size" value="l"> L</label>
+                    <label><input type="checkbox" name="size" value="xl"> XL</label>
+                </fieldset>
+            
+                <!-- Price Filter -->
+                <fieldset>
+                    <legend>Price:</legend>
+                    <label><input type="checkbox" name="price" value="under25"> Under $25</label>
+                    <label><input type="checkbox" name="price" value="25-50"> $25 - $50</label>
+                    <label><input type="checkbox" name="price" value="50-100"> $50 - $100</label>
+                    <label><input type="checkbox" name="price" value="100+"> $100+</label>
+                </fieldset>
+            </div>
+
+            <!-- Search Results -->
+            <section class="search-results">
+                <h2>Results:</h2>
+                <div id="results-container"></div>
+            </section>
+        </section>
+    </main>
+
+</body>
+</html>
