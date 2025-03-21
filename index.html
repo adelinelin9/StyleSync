@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Sync</title>
     <link rel="stylesheet" href="CSS/main.css">
-    <script type="text/javascript" src="main.js" defer></script>
+
+    <script type="module" src="JS/Firebase.js" defer></script>
+    <script type="text/javascript" src="JS/main.js" defer></script>
+    <script type="module" src="JS/auth.js"></script>
 
     <!-- Font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +27,7 @@
         
         <div class = "signIn" >
             <a href="signin.html">Sign In</a>
+            <button id="logout-button" style="display: none;">Log Out</button>
         </div> 
 
 
@@ -32,7 +36,7 @@
         </a>
 
 
-        <nav>
+        <nav class="navbar">
             
             <a href="index.html" id="look-book">LookBook</a>
             <a href="outfit-builder.html" id="outfit-builder">Outfit Builder</a>
@@ -49,40 +53,51 @@
         </section>
 
         <section class="lookbook-posts-container"> 
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="1">
                 <img src="img/outfit1.jpg" alt="Outfit 1">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="2">
                 <img src="img/outfit2.jpg" alt="Outfit 2">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="3">
                 <img src="img/outfit3.jpg" alt="Outfit 3">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="4">
                 <img src="img/outfit4.jpg" alt="Outfit 4">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="5">
                 <img src="img/outfit5.jpg" alt="Outfit 5">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="6">
                 <img src="img/outfit6.jpg" alt="Outfit 6">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="7">
                 <img src="img/outfit7.jpg" alt="Outfit 7">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="8">
                 <img src="img/outfit8.jpg" alt="Outfit 8">
             </div>
-            <div class="lookbook-post">
+            <div class="lookbook-post" data-post="9">
                 <img src="img/outfit9.jpg" alt="Outfit 9">
             </div>
             <!-- Add more lookbook-posts as needed -->
+
+            <!-- allows for expanding of images-->
+            <div class="expanded-view">
+                <button class="close-btn">&times;</button>
+                <img id="expanded-img" src="" alt="Outfit Image">
+                <div id="item-details">
+                    <!-- The "Links to Outfit Items:" will be inserted here dynamically -->
+                    <ul id="links-list">
+                        <!-- Links and prices will be added here dynamically -->
+                    </ul>
+                </div>
+            </div>
+
         </section>    
     </main>
     
 
-    <footer>
-        <p>&copy; 2025 Style Sync</p>
-    </footer>
+
 </body>
 </html>

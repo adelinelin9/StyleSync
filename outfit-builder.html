@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Sync</title>
     <link rel="stylesheet" href="CSS/main.css">
-    <script type="text/javascript" src="main.js" defer></script>
+
+    <script type="module" src="JS/Firebase.js" defer></script>
+    <script type="text/javascript" src="JS/main.js" defer></script>
+    <script type="module" src="JS/auth.js"></script>
     
     <!-- Font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +20,7 @@
         
         <div class = "signIn" >
             <a href="signin.html">Sign In</a>
+            <button id="logout-button" style="display: none;">Log Out</button>
         </div> 
 
 
@@ -25,7 +29,7 @@
         </a>
 
 
-        <nav>
+        <nav class="navbar">
             
             <a href="index.html" id="look-book">LookBook</a>
             <a href="outfit-builder.html" id="outfit-builder">Outfit Builder</a>
@@ -73,9 +77,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2025 Style Sync</p>
-    </footer>
+
 </body>
 </html>
 
