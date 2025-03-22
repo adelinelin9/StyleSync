@@ -197,7 +197,7 @@ const lookbookData = {
             { name: "Navy Blue and White Spezials", url: "https://www.adidas.com/us/handball-spezial-shoes/JH5440.html", price: "$110" },         ]
     },
     19: {
-        img: "img/fit19.png",
+        img: "img/fit19 .png",
         links: [
             { name: "Patagonia Fleece", url: "https://www.patagonia.com/product/mens-microdini-half-zip-fleece-pullover/26200.html?dwvar_26200_color=PLCN", price: "$129" },
             { name: "Baggy Black Jeans", url: "https://www2.hm.com/en_us/productpage.1260177001.html?srsltid=AfmBOoqdi2Ei1CCYJn34ONpMUdeoaYPQNBxedKK0m5DENCq02EAnAXxEYVQ&gQT=1", price: "$44.99" },
