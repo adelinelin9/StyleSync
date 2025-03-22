@@ -30,8 +30,24 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    transition: all 0.3s ease;
 }
 
+header .logo img {
+    height: 180px;
+    transition: height 0.3s ease;
+}
+
+header.scrolled {
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+header.scrolled .logo img {
+    height: 120px;
+}
+
+/* Sign In Button */
 .signIn {
     position: absolute;
     top: 10px;
@@ -46,11 +62,13 @@ header {
     text-align: center;
 }
 
+/* Logo */
 .logo {
     align-self: center;
     padding: 10px 0;
 }
 
+/* Navigation Bar */
 nav.navbar {
     display: flex;
     justify-content: center;
@@ -80,7 +98,7 @@ nav.navbar {
     left: 0;
 }
 
-/* Lookbook Layout */
+/* Lookbook Section */
 .lookbook {
     display: flex;
     flex-direction: column;
@@ -102,7 +120,7 @@ nav.navbar {
     justify-content: center;
 }
 
-/* Lookbook Post Styling */
+/* Lookbook Post */
 .lookbook-post {
     background-color: #fff;
     border-radius: 8px;
@@ -114,7 +132,7 @@ nav.navbar {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    height: 340px; /* increased slightly for breathing room */
+    height: 340px;
 }
 
 .lookbook-post:hover {
@@ -131,7 +149,7 @@ nav.navbar {
     display: block;
 }
 
-/* Expanded View Popup */
+/* Expanded View */
 .expanded-view {
     position: fixed;
     top: 50%;
@@ -176,6 +194,7 @@ nav.navbar {
     cursor: pointer;
 }
 
+/* Link Details */
 #item-details {
     width: 100%;
     text-align: left;
